@@ -14,7 +14,6 @@ class Feedback extends Component {
         this.submitFeedback = this.submitFeedback.bind(this);
     }
     submitFeedback(feedback) {
-        console.log('this isnt fucking working');
         axios.post('http://wolves.wlvs.tv/feedback', {
             "msg": feedback
         }).then((response) => {
@@ -41,6 +40,7 @@ class Feedback extends Component {
                                 backgroundColor="#387EF5"
                                 raised
                                 title="Submit"
+                                onPress={ () => this.submitFeedback(this.state.feedback) }
                             />
                             <Divider style={{ backgroundColor: 'grey', marginTop: 20 }}/>
                         </ViewMore>
