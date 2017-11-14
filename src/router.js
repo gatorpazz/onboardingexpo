@@ -1,8 +1,7 @@
 import React from 'react';
-import { DrawerNavigator, DrawerItems } from 'react-navigation'
+import { DrawerNavigator } from 'react-navigation'
 import DrawerContent from './components/DrawerContent';
 import routes from './routes';
-import SharedStyles from './assets/styles/shared';
 
 export default OnboardingV2 = DrawerNavigator(
     routes,
