@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, KeyboardAvoidingView } from 'react-native';
 import { Text, Button, Divider } from 'react-native-elements';
 import { ViewMore, Container, Img, Headers, Input } from "../components";
 import info from '../assets/pages/Feedback/feedback.en';
@@ -24,8 +24,8 @@ class Feedback extends Component {
     }
     render() {
         return (
-            <ScrollView stickyHeaderIndices={[0]}>
-                <Headers title="Feedback" navigation={this.props.navigation} />
+            <ScrollView stickyHeaderIndices={ [0] }>
+                <Headers title="Feedback" navigation={ this.props.navigation } />
                 <KeyboardAvoidingView behavior="position">
                     <Container>
                         <Img src={ info.image } height={ 250 } />
