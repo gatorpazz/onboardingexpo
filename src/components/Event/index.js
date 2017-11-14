@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { Text } from '../';
 import styles from './styles';
 
-const Event = ({event}) => {
+const Event = ({ event }) => {
     const { containerStyles,
             timeContainerStyles,
             textContainerStyles,
@@ -14,10 +15,10 @@ const Event = ({event}) => {
         return (
             <View style={containerStyles}>
                 <View style={[defaultStyles, timeContainerStyles]}>
-                    <Text>{event.startTime} - {event.endTime}</Text>
+                    <Text>{startTime} - {endTime}</Text>
                 </View>
                 <View style={[defaultStyles, textContainerStyles]}>
-                    <Text>{event.text}</Text>
+                    <Text>{text}</Text>
                 </View>
             </View>
         )

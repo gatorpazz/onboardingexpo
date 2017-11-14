@@ -10,7 +10,7 @@ const ViewMore = ({ children, mBot=18, mTop=0, mLeft=0, mRight=0, styles }) => {
             marginRight: mRight,
             ...styles
         }}>
-            {children}
+            { children }
         </View>
     );
 };

@@ -8,7 +8,7 @@ export default styles = {
         fontWeight: 'bold'
     },
     times: {
-        flex: 3,
+        flex: 2,
         fontWeight: 'bold'
     }
 };

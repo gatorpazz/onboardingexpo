@@ -5,9 +5,9 @@ import PageHeader from './PageHeader';
 import SubHeader from './SubHeader';
 
 const Headers = ({ title, navigation }) => (
-    <View>
+    <View style={{ zIndex: 500, backgroundColor: 'white' }}>
         <AppHeader />
-        <PageHeader title={title} navigation={navigation} />
+        <PageHeader title={ title } navigation={ navigation } />
         <SubHeader />
     </View>
 );

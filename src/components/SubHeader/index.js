@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { Text } from '../';
 import styles from './styles';
 
 const SubHeader = () => (
     <View style={styles.containerStyle}>
-        <Text>Accredo-Orlando Campus</Text>
+        <Text h3>Accredo-Orlando Campus</Text>
     </View>
 );
 

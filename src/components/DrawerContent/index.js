@@ -1,16 +1,12 @@
 import React, {Component} from 'react';
 import {
     ScrollView,
-    View,
-    Text,
-    Button,
-    TouchableWithoutFeedback,
     LayoutAnimation,
     UIManager,
     Linking
 } from 'react-native';
-import { DrawerNavigator, DrawerItems } from 'react-navigation';
-import { ListItem, Divider } from 'react-native-elements';
+import { DrawerItems } from 'react-navigation';
+import { ListItem } from 'react-native-elements';
 import DrawerItemsContent from '../../assets/pages/Drawer/drawerItems.en';
 import styles from './styles';
 
@@ -22,15 +18,6 @@ class DrawerContent extends Component {
         this.state = {
             selectedDrawerItem: null
         }
-    }
-    componentWillUpdate() {
-        const drawerAnimation = {
-            duration: 250,
-            update: {
-                type: LayoutAnimation.Types.easeInEaseOut
-            },
-        };
-        LayoutAnimation.configureNext(drawerAnimation);
     }
     createProps(x, y) {
         return {...this.props, items: this.props.items.slice(x, y)}
@@ -82,7 +69,7 @@ class DrawerContent extends Component {
                     titleStyle={{color: '#FFFFFF', fontWeight: 'bold', marginTop: 10}}
                     containerStyle={{borderBottomColor: 'rgba(255, 255, 255, 0.25)'}}
                 />
-                <DrawerItems {...theRest} />
+                <DrawerItems {...theRest} inactiveBackgroundColor="#008DCB" />
                 <ListItem
                     title="Helpful Links"
                     hideChevron

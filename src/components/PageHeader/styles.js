@@ -5,7 +5,6 @@ export default styles = {
         alignItems: 'center',
     },
     titleStyle: {
-        paddingLeft: 10,
         color: 'white'
     }
 }

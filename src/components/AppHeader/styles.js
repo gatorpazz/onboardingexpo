@@ -1,7 +1,7 @@
 export default styles = {
   header: {
     backgroundColor: '#14568D',
-    height: 30,
+    height: 40,
     marginTop: 20,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },

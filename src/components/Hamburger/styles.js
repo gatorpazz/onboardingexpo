@@ -1,14 +1,15 @@
 export default styles = {
     containerStyle: {
-        marginTop: 10,
-        marginBottom: 10,
-        marginLeft: 10
+        paddingTop: 10,
+        paddingBottom: 10,
+        paddingLeft: 10,
+        paddingRight: 10
     },
     barStyle: {
         backgroundColor: 'white',
-        marginTop: 2,
-        marginBottom: 2,
-        width: 20,
-        height: 3
+        marginTop: 3,
+        marginBottom: 3,
+        width: 25,
+        height: 4
     }
 }

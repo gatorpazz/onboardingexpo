@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { Text } from '../';
 import styles from './styles';
 
-const Li = ({text, hideBullets, bulletCode=`\u2022`, margin=18}) => {
+const Li = ({ text, hideBullets, bulletCode='\u2022', margin=18 }) => {
     const bullet = !hideBullets &&
         (<Text style={styles.bullet}>
             {`${bulletCode} `}
@@ -11,11 +12,12 @@ const Li = ({text, hideBullets, bulletCode=`\u2022`, margin=18}) => {
     return (
         <View style={{
             ...styles.listItem,
-            marginBottom: margin }}
+            marginBottom: margin
+        }}
         >
-            {bullet}
+            { bullet }
             <Text style={styles.li}>
-                {text}
+                { text }
             </Text>
         </View>
     );
