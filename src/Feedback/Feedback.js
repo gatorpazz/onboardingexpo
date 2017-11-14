@@ -30,7 +30,7 @@ class Feedback extends Component {
                         <Img src={ info.image } height={ 250 } />
                         <Input
                             label={ info.heading }
-                            value={ this.state.value }
+                            value={ this.state.feedback }
                             onChangeText={ feedback => this.setState({  feedback  }) }
                             placeholder="Enter your feedback"
                         />
