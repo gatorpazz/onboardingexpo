@@ -1,16 +1,16 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import { Text } from 'react-native-elements';
+import { Text } from '../components';
 import { ViewMore, List, Headers, Container } from "../components/index";
 import info from '../assets/pages/EmployeeSafety/medicalEmergencies.en';
 
 const MedicalEmergencies = ({ navigation }) => {
     return (
-        <ScrollView stickyHeaderIndices={[0]}>    
-            <Headers title="Medical Emergencies" navigation={navigation} />
+        <ScrollView stickyHeaderIndices={[0]}>
+            <Headers title="Medical Emergencies" navigation={ navigation } />
             <Container>
                 <ViewMore>
-                    <Text h3>{info.heading}</Text>
+                    <Text h2>{info.heading}</Text>
                 </ViewMore>
                 <ViewMore>
                     <List array={info.content} />

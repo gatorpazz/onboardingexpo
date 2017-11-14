@@ -1,11 +1,11 @@
 import React from 'react';
-import { ScrollView, View, TouchableOpacity, Platform, Linking } from 'react-native';
-import { Text } from 'react-native-elements';
+import { ScrollView, TouchableOpacity, Platform, Linking } from 'react-native';
 import {
     Headers,
     Img,
     ViewMore,
-    Container
+    Container,
+    Text
 } from '../components';
 import info from '../assets/pages/Amenities/campusOverview.en';
 
@@ -20,10 +20,10 @@ const CampusOverview = ({ navigation }) => {
                 <Img src={info.image} height={245} />
             <Container styles={{paddingTop: 0}}>
                 <ViewMore>
-                    <Text h4>{info.heading}</Text>
+                    <Text h1>{info.heading}</Text>
                 </ViewMore>
                 <ViewMore>
-                    <Text style={styles.subHeading}>{info.subHeading}</Text>
+                    <Text h3>{info.subHeading}</Text>
                 </ViewMore>
                 <ViewMore>
                     <TouchableOpacity onPress={() => Linking.openURL(mapLink)}>
@@ -33,18 +33,12 @@ const CampusOverview = ({ navigation }) => {
                     </TouchableOpacity>
                 </ViewMore>
                 <ViewMore>
-                    <Text style={styles.subHeading}>{info.contact.title}</Text>
+                    <Text h3>{info.contact.title}</Text>
                 </ViewMore>
                 <Text>{info.contact.number }</Text>
             </Container>
         </ScrollView>
     );
-};
-
-const styles = {
-    subHeading: {
-        fontSize: 18
-    }
 };
 
 export default CampusOverview;

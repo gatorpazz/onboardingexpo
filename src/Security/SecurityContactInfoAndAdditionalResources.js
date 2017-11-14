@@ -1,13 +1,12 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import { Text } from 'react-native-elements';
 import Autolink from 'react-native-autolink';
-import { ViewMore, Container, List, Headers } from "../components/index";
+import { ViewMore, Container, List, Headers, Text } from "../components";
 import info from '../assets/pages/Security/securityContactInfoAndAdditionalResources.en';
 
 const SecurityContactInfoAndAdditionalResources = ({ navigation }) => {
     return (
-        <ScrollView stickyHeaderIndices={[0]}>   
+        <ScrollView stickyHeaderIndices={[0]}>
             <Headers title="Contact and Additional Resources" navigation={navigation} />
             <Container>
                 <ViewMore>
@@ -21,7 +20,7 @@ const SecurityContactInfoAndAdditionalResources = ({ navigation }) => {
                     ))}
                 </ViewMore>
                 <ViewMore>
-                    <Text style={{fontSize: 18}}>{info.section2.heading}</Text>
+                    <Text h3>{info.section2.heading}</Text>
                 </ViewMore>
                 <ViewMore>
                     <List array={info.section2.content} />

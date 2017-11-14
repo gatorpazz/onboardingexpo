@@ -1,12 +1,12 @@
 import React from 'react';
 import { ScrollView, View } from 'react-native';
-import { Text } from 'react-native-elements';
 import {
     List,
     Schedule,
     Container,
     ViewMore,
-    Headers
+    Headers,
+    Text
 } from '../components';
 import info from '../assets/pages/Amenities/buildingAccess.en';
 
@@ -16,13 +16,13 @@ const BuildingAccess = ({ navigation }) => {
             <Headers title="Building Access" navigation={navigation} />
             <Container>
                 <ViewMore>
-                    <Text h3>
+                    <Text h2>
                         {info.section1.heading}
                     </Text>
                 </ViewMore>
                 <List array={info.section1.content} style={styles.marginBot} />
                 <ViewMore>
-                    <Text h3>
+                    <Text h2>
                         {info.section2.heading}
                     </Text>
                 </ViewMore>

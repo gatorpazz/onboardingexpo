@@ -1,12 +1,12 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import { Text } from 'react-native-elements';
 import {
     Headers,
     Img,
     Schedule,
     ViewMore,
-    Container
+    Container,
+    Text
 } from '../components';
 import info from '../assets/pages/Amenities/fitnessCenter.en';
 
@@ -17,7 +17,7 @@ const FitnessCenter = ({ navigation }) => {
             <Img src={info.image} height={160}/>
             <Container>
                 <ViewMore>
-                    <Text h3>
+                    <Text h2>
                         {info.section1.heading}
                     </Text>
                 </ViewMore>

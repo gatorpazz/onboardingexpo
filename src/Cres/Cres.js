@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import { Text } from 'react-native-elements';
+import { Text } from '../components';
 import { ViewMore, Container, Img, Headers } from "../components/index";
 import info from '../assets/pages/CRES/cres.en';
 

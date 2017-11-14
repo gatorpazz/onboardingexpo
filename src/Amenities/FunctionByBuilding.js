@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, View, Image } from 'react-native';
-import { Text } from 'react-native-elements';
+import { Text } from '../components';
 import Headers from '../components/Headers';
 import List from '../components/List';
 import ViewMore from '../components/ViewMore';
@@ -25,7 +25,7 @@ const FunctionByBuilding = ({ navigation }) => {
                     info.buildings.map((building, i) => (
                         <View style={{ marginLeft: 6 }} key={i}>
                             <ViewMore>
-                                <Text h4>
+                                <Text h3>
                                     {building.heading}
                                 </Text>
                             </ViewMore>
