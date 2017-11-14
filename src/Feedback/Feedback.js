@@ -26,25 +26,26 @@ class Feedback extends Component {
         return (
             <ScrollView stickyHeaderIndices={[0]}>
                 <Headers title="Feedback" navigation={this.props.navigation} />
-                <Container>
-                    <Img src={info.image} height={250} />
-                    <Input
-                        label={info.heading}
-                        value={this.state.feedback}
-                        onChangeText={feedback => this.setState({ feedback })}
-                        placeholder="Enter your feedback"
-                    />
-                    <ViewMore>
-                        <Divider style={{ backgroundColor: 'grey', marginBottom: 20 }}/>
-                        <Button
-                            backgroundColor="#387EF5"
-                            raised
-                            title="Submit"
-                            onPress={() => this.submitFeedback(this.state.feedback)}
+                <KeyboardAvoidingView behavior="position">
+                    <Container>
+                        <Img src={ info.image } height={ 250 } />
+                        <Input
+                            label={ info.heading }
+                            value={ this.state.value }
+                            onChangeText={ feedback => this.setState({  feedback  }) }
+                            placeholder="Enter your feedback"
                         />
-                        <Divider style={{ backgroundColor: 'grey', marginTop: 20 }}/>
-                    </ViewMore>
-                </Container>
+                        <ViewMore>
+                            <Divider style={{ backgroundColor: 'grey', marginBottom: 20 }}/>
+                            <Button
+                                backgroundColor="#387EF5"
+                                raised
+                                title="Submit"
+                            />
+                            <Divider style={{ backgroundColor: 'grey', marginTop: 20 }}/>
+                        </ViewMore>
+                    </Container>
+                </KeyboardAvoidingView>
             </ScrollView>
         );
     }
